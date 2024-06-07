@@ -10,7 +10,7 @@ function TodoItem({ todo }) {
         updateTodo(todo.id, { ...todo, todo: todo })
         setIsTodoEditable(false)
     }
-    const togglecompleted=()=>{
+    const togglecompleted = () => {
         togglecomplete(todo.id)
     }
     return (
@@ -22,7 +22,7 @@ function TodoItem({ todo }) {
                 type="checkbox"
                 className="cursor-pointer"
                 checked={todo.completed}
-                onChange={togglecomplete}
+                onChange={togglecompleted}
             />
             <input
                 type="text"
